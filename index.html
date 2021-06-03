@@ -65,7 +65,7 @@ button#send-message {
 	websocket = new WebSocket(wsUri); 
 	
 	websocket.onopen = function(ev) { // connection is open 
-		msgBox.append('<div class="system_msg" style="color:#bbbbbb"> Tốc độ gửi tin nhắn có thể bằng mess hay zalo. Server xử lý tin nhắn đang chạy trên con vps rảnh loz của ô Long :))).<br>Đây chỉ là demo nhỏ không sử dụng db nên tin nhắn sẽ ko đc lưu! Chỉ có 2 máy cùng online mới tnt đc cho nhau.</div>'); //notify user
+		msgBox.append('<div class="system_msg" style="color:#bbbbbb"> Tốc độ gửi tin nhắn có thể bằng mess hay zalo. Server xử lý tin nhắn đang chạy trên con vps rảnh loz của ô Long :))).<br>Đây chỉ là demo nhỏ không sử dụng db nên tin nhắn sẽ ko đc lưu! Chỉ có các máy cùng online mới tn đc cho nhau.</div>'); //notify user
 	}
 	// Message received from server
 	websocket.onmessage = function(ev) {
